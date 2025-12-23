@@ -1,4 +1,5 @@
-Modified by Marcell Perger from code at https://github.com/Berkeley-CS61B/skeleton-sp25/tree/209b8601aaad8646440d5814e8acb46dddd5b27e/proj1a/tests
+This LinkedListDeque61BTest.java and PreconditionTest.java files are modified
+by Marcell Perger from code at https://github.com/Berkeley-CS61B/skeleton-sp25/tree/209b8601aaad8646440d5814e8acb46dddd5b27e/proj1a/tests
 The modifications (disabling a test, fixing test ordering) are under the following license:
 
 The MIT License (MIT)
@@ -26,4 +27,5 @@ SOFTWARE.
 
 -----------------
 
-The license for the original code at https://github.com/Berkeley-CS61B/skeleton-sp25/tree/209b8601aaad8646440d5814e8acb46dddd5b27e/proj1a/tests is unknown.
+The license for the original code at https://github.com/Berkeley-CS61B/skeleton-sp25/tree/209b8601aaad8646440d5814e8acb46dddd5b27e/proj1a/tests
+is unknown.
