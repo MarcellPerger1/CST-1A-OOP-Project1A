@@ -1,11 +1,8 @@
 package uk.ac.cam.mp2226.part1a.oop.proj1a;
 
-import jh61b.utils.Reflection;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.google.common.truth.Truth.assertThat;
-import static com.google.common.truth.Truth.assertWithMessage;
 
 /** Performs some basic linked list tests. */
 public class LinkedListDeque61BTest {
