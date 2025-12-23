@@ -94,17 +94,20 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
 
     @Override
     public T removeFirst() {
+        if (isEmpty()) return null;
         size -= 1;
         return first().removeSelf().value;
     }
     @Override
     public T removeLast() {
+        if (isEmpty()) return null;
         size -= 1;
         return last().removeSelf().value;
     }
 
     @Override
     public T get(int index) {
+        if (!validIndex(index)) return null;
         Node<T> curr = first();
         for (int i = 0; i < index; i++) {
             curr = curr.next;
@@ -114,9 +117,14 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
 
     @Override
     public T getRecursive(int index) {
+        if (!validIndex(index)) return null;
         return getRecursive(first(), index);
     }
     private T getRecursive(Node<T> curr, int advance) {
-        return advance == 0 ? curr.value : getRecursive(curr, advance - 1);
+        return advance == 0 ? curr.value : getRecursive(curr.next, advance - 1);
+    }
+
+    private boolean validIndex(int i) {
+        return i >= 0 && i < size;
     }
 }
